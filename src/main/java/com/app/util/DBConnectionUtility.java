@@ -11,7 +11,7 @@ public class DBConnectionUtility {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://172.16.103.110:3306/simpleAppDB", "root", "Training@Jn1t");
+			connection = DriverManager.getConnection("jdbc:mysql://172.16.103.110:3306/simpleAppDB", "myuser", "Training@Jn1t");
 				   //DriverManager.getConnection("jdbc:mysql://localhost:3306/simpleAppDB", "root", "Training@Jn1t");
 		} catch (SQLException e) {
 			e.printStackTrace();
